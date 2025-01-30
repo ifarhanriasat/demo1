@@ -7,6 +7,7 @@ import { ShopsModule } from '../shops/shops.module';  // Import the Shop module
 import { ProductModule } from '../products/products.module';  // Import the Product module
 import { Shop } from 'src/shops/entities/shop.entity';
 import { Product } from 'src/products/entities/product.entity';
+import { Web3Service } from 'src/web3/web3.service';
 
 @Module({
   imports: [
@@ -15,6 +16,6 @@ import { Product } from 'src/products/entities/product.entity';
     ProductModule,  // Import ProductModule to access the Product service
   ],
   controllers: [ShopProductController],  // Register the controller
-  providers: [ShopProductService],  // Register the service
+  providers: [ShopProductService, Web3Service],  // Register the service
 })
 export class ShopProductModule {}

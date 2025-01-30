@@ -26,10 +26,19 @@ Before starting, ensure you have the following installed:
 
 ```bash
 
-git clone https://github.com/ifarhanriasat/demo1.git
-cd demo1
+git clone https://github.com/ifarhanriasat/shop-and-items.git
+cd shop-and-items
+create .env file
 
--> update database credentials in .env file
+update following in .env file:
+
+DATABASE_HOST=
+DATABASE_PORT=
+DATABASE_USER=
+DATABASE_PASSWORD=
+DATABASE_NAME=
+RPC_URL=
+PRIVATE_KEY=
 
 npm install 
 npm run start:dev
@@ -38,4 +47,4 @@ npm run start:dev
 
 ## Testing
 
-Please download this [Postman](https://drive.google.com/file/d/1_JudK2_KB6-V-OT9UnKDLMxVdL2TijeI/view?usp=sharing) collection and import to test the APIs.
+Please download this [Postman](https://drive.google.com/file/d/1dqNov-zjH01-j9Vv1ctjXvE8Wn0sc6MP/view?usp=sharing) collection and import to test the APIs.
